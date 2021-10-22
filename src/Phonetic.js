@@ -3,10 +3,11 @@ import ReactAudioPlayer from "react-audio-player";
 
 export default function Phonetic(props) {
     return (
-      <div className="Phonetic">
-        <ReactAudioPlayer src={props.phonetic.audio} onPlay controls />
-        <br />
+      <span className="Phonetic">
         {props.phonetic.text}
-      </div>
+        <div>
+          <ReactAudioPlayer src={props.phonetic.audio} onPlay controls />
+        </div>
+      </span>
     );
 }

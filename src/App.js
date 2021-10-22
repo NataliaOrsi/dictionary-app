@@ -9,10 +9,20 @@ function App() {
           <h1>Dictionary</h1>
         </header>
         <main>
-          <Dictionary />
+          <Dictionary defaultKeyword="friend" />
         </main>
         <footer className="App-footer">
-          <small>Coded by Natalia de Mesquita orsi Vieira</small>
+          <small>
+            Coded by <span className="coder">Natalia de Mesquita orsi Vieira</span>, open-sourced
+            on{" "}
+            <a
+              href="https://github.com/NataliaOrsi/dictionary-app"
+              target="_blank"
+              rel="noreferrer"
+            >
+              GitHub
+            </a>
+          </small>
         </footer>
       </div>
     </div>
